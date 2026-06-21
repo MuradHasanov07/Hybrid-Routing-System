@@ -1,5 +1,7 @@
 # Hibrit Derin Öğrenme ve LLM Yönlendirme Sistemi
 
+**GitHub Deposu:** https://github.com/MuradHasanov07/Hybrid-Routing-System
+
 Maliyet odaklı bir müşteri destek mesajı yönlendirme sistemi. Sıfırdan eğitilmiş,
 hafif bir PyTorch metin sınıflandırıcısı, gelen her mesajı **Satış Sorgusu**,
 **Şikayet** veya **Spam** olarak etiketler. Yalnızca geçerli ve spam olmayan
@@ -36,7 +38,7 @@ Müşteri mesajı
 - [Zorlu Kısımlar](#zorlu-kısımlar)
 - [Öğrenilenler](#öğrenilenler)
 - [Python, AI Bileşenleri ve GitHub'ın Rolü](#python-ai-bileşenleri-ve-githubın-rolü)
-- [Sınırlamalar ve Dürüst Notlar](#sınırlamalar-ve-dürüst-notlar)
+- [Sınırlamalar ve Notlar](#sınırlamalar-ve-notlar)
 
 ---
 
@@ -150,8 +152,8 @@ hybrid-routing-system/
 
 ```bash
 # 1. Depoyu klonlayın
-git clone <repo-url>
-cd hybrid-routing-system
+git clone https://github.com/MuradHasanov07/Hybrid-Routing-System.git
+cd Hybrid-Routing-System
 
 # 2. Sanal ortam oluşturup aktive edin
 python -m venv venv
@@ -334,7 +336,7 @@ Son test seti (3.000 mesaj, 3 sınıf arasında dengeli):
 ![Training History](outputs/training_history.png)
 
 Bu skorun neden yüksek olduğu ve ne anlama gelip gelmediği hakkında
-[Sınırlamalar ve Dürüst Notlar](#sınırlamalar-ve-dürüst-notlar) bölümüne
+[Sınırlamalar ve Notlar](#sınırlamalar-ve-notlar) bölümüne
 bakın.
 
 ---
@@ -455,7 +457,7 @@ bakın.
   (embedding + maskeli ortalama havuzlama + linear sınıflandırıcı) —
   sınıflandırıcı için önceden eğitilmiş bir model veya önceden eğitilmiş
   kelime embedding'leri kullanılmamıştır. Hibrit sistemin "LLM" yarısı şu an
-  mock'lanmıştır (bakınız [Sınırlamalar](#sınırlamalar-ve-dürüst-notlar)),
+  mock'lanmıştır (bakınız [Sınırlamalar](#sınırlamalar-ve-notlar)),
   ancak gerçek bir GPT/Claude API çağrısının tek bir metot değişikliğiyle
   yerine konabileceği şekilde yapılandırılmıştır.
 - **GitHub**, geliştirme süreci boyunca sürüm kontrolü için kullanıldı;
@@ -465,7 +467,7 @@ bakın.
 
 ---
 
-## Sınırlamalar ve Dürüst Notlar
+## Sınırlamalar ve Notlar
 
 - **Veri seti sentetik/şablon tabanlıdır**, gerçek müşteri mesajları değildir.
   Orijinal Kaggle veri setinin metin kolonu kullanılabilir bir sinyal
